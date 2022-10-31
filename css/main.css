@@ -1,0 +1,144 @@
+main {
+    padding: 50px 50px 100px 140px; 
+
+}
+
+.description {
+    color: var(--primary-color);
+}
+
+.my-intro {
+    font-size: 16px;
+    margin: 20px 0px 100px;
+}
+
+.my-intro h1 {
+    font-size: 140px;
+}
+
+
+.heroBtn {
+    margin: 50px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    padding: 12px 34px;
+    font-size: 18px;
+    background: var(--background-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.heroBtn:hover {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.about-me {
+    margin: 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facts-about-me {
+    flex-basis: 31%;
+    background: var(--secondary-color);
+    border-radius: 80px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.facts-about-me:hover {
+    box-shadow: 0 0 20px 0 rgb(159, 176, 159);
+}
+
+.facts-about-me p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px;
+
+}
+
+.my-ref {
+    padding: 100px;
+}
+
+.ref-col{
+    border-radius: 10px;
+    background: var(--secondary-color);
+    text-align: left;
+    margin-bottom: 20px;
+    padding:30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.ref-col:hover{
+    transform: translateY(-10px);
+}
+
+.manager-icon {
+    background: transparent;
+    position: absolute;
+    top:45px;
+    left: 30px;
+    width:40px;
+    border-radius: 50%;
+}
+
+.ref-text {
+    background: var(--secondary-color);
+    padding-left: 75px;
+    font-size: 13px;
+}
+
+.star-icon {
+    width: 20px;
+}
+
+.dark-mode-icon {
+    position: fixed;
+    width: 40px;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+    main {
+        padding: 50px 5px;
+    }
+
+    .my-intro h1 {
+        font-size: 80px;
+    }
+    .my-intro p {
+        padding: 30px;
+    }
+
+
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .my-ref {
+        padding: 7px;
+    }
+    .ref-text {
+        padding-left: 40px;
+    }
+    .manager-icon {
+        left: 20px;
+        width: 30px;
+    }
+}

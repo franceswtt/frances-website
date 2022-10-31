@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rockPaperScissors.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Frances Wong's Website</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="left-section">
+        <img class="hamburger-icon" onclick="openMenu()" src="icons/hamburger-icon.svg" alt="hamburger-icon">
+        <span class="my-logo">FW</span>
+      </div>
+
+      <div class="mid-section">
+        <div class="seach-box">
+          <img class="search-icon" src="icons/search-icon.svg" alt="search-icon">
+          <input class="text-bar" type="text">
+        </div>
+      </div>
+
+      <div class="right-section">
+        <a href="tel://+85294407855">
+        <div class="phone-call-btn" >
+          <img class="phone-call-icon" src="icons/phone-call-icon.svg" alt="phone-call-icon">
+          <div class="tooltip" >Call Me</div>
+        </div></a>
+        <a href="mailto:franceswtt@gmail.com">
+        <div class="email-btn">
+          <img class="email-icon" src="icons/email-icon.svg" alt="email-icon">
+          <div class="tooltip" >Email Me</div>
+        </div></a>
+        <a href="Frances Wong's Resume.pdf" target="_blank">
+        <div class="download-btn">
+          <img class="download-icon" src="icons/download-icon.svg" alt="download-icon">
+          <div class="tooltip" >Download My CV</div>
+        </div></a>
+        <div class="my-face">
+          <img class="profile-pic" src="images/profile-pic.png" alt="profile-picture">
+          <div class="tooltip" >Meet Me!</div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mySidebar" class="sidebar">
+      <a href="#home"><div class="sidebar-links">
+        <img src="icons/home-icon.svg" alt="home-icon">
+        <div class="nav-links">Home</div>
+      </div></a>
+      <a href="#about"><div class="sidebar-links">
+        <img src="icons/about-icon.svg" alt="about-icon">
+        <div class="nav-links">About Me</div>
+      </div></a>
+      <a href="#myRef"><div class="sidebar-links">
+        <img src="icons/ref-icon.svg" alt="ref-icon">
+        <div class="nav-links">My References</div>
+      </div></a>
+      <a href="#game"><div class="sidebar-links">
+        <img src="icons/game-icon.svg" alt="game-icon">
+        <div class="nav-links">My Game</div>
+      </div></a>
+      <a href="#contact"><div class="sidebar-links">
+        <img src="icons/circle-email-icon.svg" alt="email-icon">
+        <div class="nav-links">Contact Me</div>
+      </div></a>
+    </nav>
+    
+
+
+    <main>
+      <section id="home" class="my-intro" data-aos="fade-up">
+      
+        <h1>Hello World!</h1>
+        <p>I'm Frances. &#128512	I build this website with HTML, CSS, and JavaScript. <br> Click around to check out the responsive web design!</p>
+        <a class="heroBtn" href="Frances Wong's Resume.pdf" target="_blank">CHECK OUT MY CV</a>
+    
+      </section>
+
+      
+      <section id="about" data-aos="fade-up">
+        <h1>About Me</h1>
+        <p class="description">Some facts about me.</p>
+        <div  class="about-me">
+          <div class="facts-about-me">
+          <h3>FACT 1</h3>
+          <p>I initially began my career as a digital marketer, I was responsible for strategizing and developing new campaigns.</p>
+          </div>
+
+          <div class="facts-about-me">
+            <h3>FACT 2</h3>
+            <p>As a digital marketer who worked in e-commerce companies, I was (I am!) skilled at creating visually appealing and user-friendly websites. </p>
+          </div>
+
+          <div class="facts-about-me">
+            <h3>FACT 3</h3>
+            <p>In addition to my previous work experience, I have also taken several web development courses. I have taught myself HTML, CSS, and JavaScript in preparation for my transition to a web development role.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-ref" id="myRef" data-aos="fade-up">
+        <h1>My References</h1>
+        <p class="description">What they say about me?</p>
+
+        <div class="ref-col">
+          <div class="manager-icon">
+          <img src="icons/manager-icon.svg" alt="manager-icon"></div>
+          <div class="ref-text"><p>Throughout her time with our team, Frances proved herself to be a hard-working, motivated,
+            ambitious, charismatic, and reliable employee. Her honesty, dependability, confidence, and
+            excellent communication skills helped her become the top employee two years running, surpassing
+            her monthly goals by an incredibly impressive 200%. Her superb marketing skills has resulted in a
+            number of important accomplishments for our team.</p>
+            <h3>Tse Wai Sing</h3>
+            <p>Sales & Marketing Team Manager</p>
+            <img class="star-icon" src="images/star-icon.png" alt="star-icon">
+            <img class="star-icon" src="images/star-icon.png" alt="star-icon">
+            <img class="star-icon" src="images/star-icon.png" alt="star-icon">
+            <img class="star-icon" src="images/star-icon.png" alt="star-icon">
+            <img class="star-icon" src="images/star-icon.png" alt="star-icon">
+          </div>
+          
+        </div>
+
+      </section>
+
+    
+
+  <section id="game" class="my-game" data-aos="fade-up">
+    <h1>My Game</h1>
+    <p class="description">Let's Play Rock, Paper, Scissors!</p>
+    <div id="gameContainer">
+      <img src="images/rock-paper-scissors.jpg" alt="rock-paper-scissors-image">
+      <div class="layer" onclick="startGame()">
+        <h3>START NOW</h3>
+      </div>
+      <h1 id="playerDisplay" class="displayText">You: </h1>
+      <h2 id="computerDisplay" class="displayText">Computer: </h2>
+      <h3 id="resultDisplay" class="displayText">SHOOT!</h3>
+
+      <div class="button-holder">
+        <button type="button" id="rockBtn" class="gameBtn"><span></span>ROCK</button>
+        <button type="button" id="paperBtn" class="gameBtn"><span></span>PAPER</button>
+        <button type="button" id="scissorsBtn" class="gameBtn"><span></span>SCISSORS</button>
+      </div>
+    </div>
+  </section>
+
+
+<section id="contact" data-aos="fade-up">
+  <div class="contact-form">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h1>Contact Me</h1>
+      <p class="description">Shoot me an email</p>
+      <input type="text" id="yourName" placeholder="Your Name" required>
+      <input type="email" id="yourEmail" placeholder="Your Email" required>
+      <textarea name="" id="yourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
+
+</section>
+
+<img class="dark-mode-icon" onclick="darkMode()" src="icons/moon-icon.svg" alt="moon-icon">
+
+</main>
+
+  <footer>
+    <p>Made with &#10084; by Frances Wong <br>
+    Thank you for your time!</p>
+
+  </footer>
+
+
+
+
+    
+
+  <script src="javaScript/darkMode.js"></script>
+  <script src="javaScript/sidebar.js"></script>
+  <script src="javaScript/rockPaperScissors.js"></script>
+  <script src="javaScript/contact.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  </body>
+</html>

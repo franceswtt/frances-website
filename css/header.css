@@ -1,8 +1,8 @@
 header {
     height: 70px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     background: var(--background-color);
     top: 0;
     left: 0;
@@ -17,9 +17,9 @@ header {
 }
 
 .left-section {
-width: 300px;
-display: flex;
-align-items: center;
+    width: 300px;
+    display: flex;
+    align-items: center;
 }
 
 .hamburger-icon{
@@ -38,8 +38,6 @@ align-items: center;
     font-size: 25px;
     border-radius: 50px;
 }
-
-
 
 .mid-section {
     flex: 1;
@@ -65,17 +63,23 @@ align-items: center;
 .text-bar {
     width: 100%;
     padding: 10px;
-    color: black;
     background: transparent;
-    border: 0px;
+    border: none;
     outline: none;
-
 }
 
 .search-icon {
     width: 25px;
     cursor: pointer;
+}
 
+.right-section{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    flex-shrink: 0;
 }
 
 .phone-call-btn,
@@ -97,7 +101,7 @@ align-items: center;
     background-color:var(--primary-color);
     color: var(--background-color);
     font-size: 14px;
-    padding: 5px 9px 5px 9px;
+    padding: 5px 9px;
     border-radius: 2px;
     border: 1px solid var(--secondary-color);
     bottom: -40px;
@@ -105,7 +109,6 @@ align-items: center;
     transition: opacity 0.25;
     pointer-events: none;
     white-space: nowrap;
-
 }
 
 .phone-call-btn:hover .tooltip,
@@ -115,35 +118,21 @@ align-items: center;
     opacity: 1;
 }
 
-
-
-.right-section{
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
-    flex-shrink: 0;
-}
-
 .phone-call-icon,.email-icon, .download-icon {
     width: 30px;
 }
-
-
 
 .profile-pic {
     width: 40px;
     border-radius: 20px;
 }
 
-
-
 @media only screen and (max-width:700px) {
 
     header {
         padding-left: 5px;
     }
+    
     .hamburger-icon{
         margin-left: 20px;
         margin-right: 20px;
@@ -153,20 +142,22 @@ align-items: center;
     
     .seach-box {
        opacity: 0;
-
     }
+
     .text-bar {
         opacity: 0;
     }
+
     .right-section{
         width: 190px;
     }
+
     .phone-call-icon,.email-icon, .download-icon {
         width: 25px;
     }
+
     .profile-pic {
         width: 35px;
-
     }
 
 }

@@ -1,6 +1,5 @@
 main {
     padding: 50px 50px 100px 140px; 
-
 }
 
 .description {
@@ -14,8 +13,11 @@ main {
 
 .my-intro h1 {
     font-size: 140px;
-}
+    background: linear-gradient(173deg, rgba(199,212,163,1) 0%, rgb(218, 236, 177) 65%, rgba(236,246,233,1) 100%);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+}
 
 .heroBtn {
     margin: 50px;
@@ -30,7 +32,6 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
-
 }
 
 .heroBtn:hover {

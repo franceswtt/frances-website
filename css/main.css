@@ -14,9 +14,19 @@ main {
 .my-intro h1 {
     font-size: 140px;
     background: linear-gradient(173deg, rgba(199,212,163,1) 0%, rgb(218, 236, 177) 65%, rgba(236,246,233,1) 100%);
-        -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fade 1s ease-in;
+}
 
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 .heroBtn {

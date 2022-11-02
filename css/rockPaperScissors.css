@@ -166,6 +166,9 @@
         top: -30px;
         width: 120%;
     }
+    .layer h3 {
+        left: 38%;
+    }
     .gameBtn {
         width: 112px;
         margin: 5px;

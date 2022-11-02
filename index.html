@@ -132,25 +132,29 @@
           </div>
         </div>
       </section>
-
+        
   <section id="game" class="my-game" data-aos="fade-up">
     <h1>My Game</h1>
     <p class="description">Let's Play Rock, Paper, Scissors!</p>
     <div id="gameContainer">
-      <img src="images/rock-paper-scissors.jpg" alt="rock-paper-scissors-image">
+      <img id="coverImage" src="images/rock-paper-scissors.jpg" alt="rock-paper-scissors-image">
       <div class="layer" onclick="startGame()">
         <h3>START NOW</h3>
       </div>
-      <h1 id="playerDisplay" class="displayText">You: </h1>
-      <h2 id="computerDisplay" class="displayText">Computer: </h2>
-      <h3 id="resultDisplay" class="displayText">SHOOT!</h3>
-
-      <div class="button-holder">
-        <button type="button" id="rockBtn" class="gameBtn"><span></span>ROCK</button>
-        <button type="button" id="paperBtn" class="gameBtn"><span></span>PAPER</button>
-        <button type="button" id="scissorsBtn" class="gameBtn"><span></span>SCISSORS</button>
+      <h1 id="startText">SHOOT!</h1>
+      <div class="vs">      
+        <h2 id="playerDisplay" class="displayText"></h2>
+        <h2 id="computerDisplay" class="displayText"></h2>
       </div>
+      <h1 id="resultDisplay" class="displayText"></h1>
+      <div class="button-holder">
+        <button type="button" id="rockBtn" class="gameBtn"><span></span>&#128074;</button>
+        <button type="button" id="paperBtn" class="gameBtn"><span></span>&#128400;</button>
+        <button type="button" id="scissorsBtn" class="gameBtn"><span></span>&#9996;</button>
+      </div>
+      <img id="restartIcon" onclick="startGame()" src="icons/restart-icon.svg" alt="restart-icon">
     </div>
+
   </section>
 
 
@@ -180,6 +184,7 @@
   <script src="javaScript/darkMode.js"></script>
   <script src="javaScript/sidebar.js"></script>
   <script src="javaScript/rockPaperScissors.js"></script>
+  <script src="javaScript/jquery-3.6.1.js"></script>
   <script src="javaScript/contact.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -3,30 +3,29 @@
     margin: 20px 20px 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
+    place-items: center;
 }
 
 #gameContainer{
     width: 500px;
     height: 250px;
-    padding: 50px;
-    border-radius: 25px;
+    border-radius: 50px;
     background-color: var(--secondary-color);
     border: 5px solid var(--primary-color);
-    padding: 10px;
-    margin-bottom: 50px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#gameContainer img {
+#coverImage {
     width: 100%;
     position: absolute;
     top: -70px;
     left: 0;
     z-index: 3;
-    transition: 0.5s;
+    transition: 0.5s;   
 }
 
 .layer {
@@ -42,7 +41,6 @@
     justify-content: center;
     cursor: pointer;
 }
-
 
 .layer:hover {
     background:rgb(187, 187, 187, 0.45);
@@ -63,30 +61,41 @@
 .layer:hover h3 {
     opacity: 1;
     bottom: 30%;
+}
 
+#startText{
+    color: rgb(237, 206, 0);
+    font-size: 60px;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    top: 19px;
+    left: -500px;
+    z-index: 3;
 }
 
 .button-holder {
     background: transparent;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    display: none;
 }
 
 .gameBtn {
-    width: 100px;
-    height: 50px;
-    margin: 5px;
-    padding: 5px 10px;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
     font-family: 'Poppins', sans-serif;
     border: 4px solid var(--primary-color);
     background: var(--background-color);
-    border-radius: 50px;
+    border-radius: 100px;
     color: rgb(237, 206, 0);
     font-weight: bold;
+    font-size: 80px;
     position: relative;
     z-index: 0;
     overflow: hidden;
     cursor: pointer;
-
 }
 
 .gameBtn span {
@@ -109,33 +118,59 @@
     border: none;
 }
 
-
-
+.vs {
+    width: 100%;
+    background: transparent;
+}
 
 
 #playerDisplay{
     color: var(--primary-color);
+    font-size: 59px;
+    display: none;
 
 }
 
 #computerDisplay{
     color: rgb(0, 0, 0);
+    font-size: 59px;
+    display: none;
 }
 
 #resultDisplay{
     color: rgb(237, 206, 0);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    top: 60px;
+    right: -500px;
+    white-space: nowrap;
 }
 
-
+#restartIcon {
+    width: 45px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: none;
+    cursor: pointer;
+}
 
 @media only screen and (max-width:700px) {
     #gameContainer {
         width: 340px;
     }
-    #gameContainer img {
+    #coverImage {
         left: -30px;
         top: -30px;
         width: 120%;
-        
-    
+    }
+    .gameBtn {
+        width: 112px;
+        margin: 5px;
+        height: 112px;
+        font-size: 70px;
+
+    }
 }

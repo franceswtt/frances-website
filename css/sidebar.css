@@ -57,13 +57,13 @@ nav {
         top: 80px;
         bottom: 0;
         transition: 0.2s;
-        max-width: 0px;
+        width: 0px;
         overflow: hidden;
     }
-    .closeBtn {
-        display: block;
-        color: blue;
-
     
+    .show-nav {
+            width: 130px;
     }
 }
+
+

@@ -6,6 +6,10 @@ main {
     color: var(--primary-color);
 }
 
+#home {
+    margin: 10px;
+}
+
 .my-intro {
     font-size: 16px;
     margin: 20px 0px 100px;
@@ -47,6 +51,10 @@ main {
 .heroBtn:hover {
     background: var(--primary-color);
     color: var(--background-color);
+}
+
+#about {
+    margin: 10px;
 }
 
 .about-me {

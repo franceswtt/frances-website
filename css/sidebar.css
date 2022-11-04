@@ -56,13 +56,13 @@ nav {
     nav {
         top: 80px;
         bottom: 0;
-        transition: 0.2s;
-        width: 0px;
+        transition: 0.5s;
+        transform: translate(-100%);
         overflow: hidden;
     }
     
     .show-nav {
-            width: 130px;
+        transform: translate(0);
     }
 }
 

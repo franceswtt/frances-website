@@ -1,6 +1,6 @@
-let name = document.getElementById("yourName")
-let email = document.getElementById("yourEmail")
-let message = document.getElementById("yourMessage")
+const name = document.getElementById("yourName")
+const email = document.getElementById("yourEmail")
+const message = document.getElementById("yourMessage")
 
 function sendEmail(){
     Email.send({

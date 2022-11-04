@@ -1,4 +1,4 @@
-let icon = document.querySelector(".dark-mode-icon")
+const icon = document.querySelector(".dark-mode-icon")
 
 
 function darkMode(){

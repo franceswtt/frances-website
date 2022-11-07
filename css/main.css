@@ -90,7 +90,7 @@ main {
     font-weight: bold;
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
-    padding: 15px;
+    padding: 8px 15px;
     font-size: 15px;
     background: var(--background-color);
     border-radius: 35px;
@@ -103,7 +103,7 @@ main {
 }
 
 .skillset-items {
-    padding: 50px;
+    padding: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 40px;

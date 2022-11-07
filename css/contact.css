@@ -29,7 +29,6 @@ form input, form textarea {
 }
 
 form button {
-    font-family: 'Poppins', sans-serif;
     width: 40%;
     padding: 10px;
     background: var(--primary-color);

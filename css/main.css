@@ -30,7 +30,6 @@ main {
     100%{
         opacity: 1;
     }
-    
 }
 
 .heroBtn {
@@ -80,7 +79,42 @@ main {
     font-size: 12px;
     line-height: 20px;
     padding: 20px;
+}
 
+#my-skills {
+    margin-top: 20px;
+}
+
+.skill-btn {
+    margin: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    padding: 15px;
+    font-size: 15px;
+    background: var(--background-color);
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.skill-btn:hover {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.skillset-items {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+.skill-image {
+    width: 100%;
+    animation: fade 0.5s ease-in;
 }
 
 .my-ref {
@@ -152,6 +186,17 @@ main {
 
     .about-me {
         flex-direction: column;
+    }
+
+    .skill-btn {
+        margin: 2px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .skillset-items {
+        padding: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .my-ref {

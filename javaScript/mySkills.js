@@ -149,7 +149,7 @@ function displayBtn(skills){
 
     const skillBtns = document.querySelectorAll(".skill-btn")
 
-    skillBtns.forEach(function(btn){
+    skillBtns.forEach((btn)=>{
         btn.addEventListener("click", (e)=>{
             const category = e.currentTarget.dataset.id
             console.log(category)

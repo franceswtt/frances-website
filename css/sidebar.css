@@ -8,7 +8,6 @@ nav {
     width: 130px;
     padding-top: 15px;
     font-weight: 400;
-    z-index: 500;
 }
 
 
@@ -56,11 +55,12 @@ nav {
     nav {
         display: flex;
         flex-direction: column;
-        top: 70px;
+        top: 80px;
         padding-top: 0;
         transition: 0.5s;
         transform: translate(-100%);
         overflow: hidden;
+        z-index: 200;
     }
     
     .show-nav {

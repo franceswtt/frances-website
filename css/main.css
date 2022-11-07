@@ -165,6 +165,7 @@ main {
     transition: 0.5s;
     background: var(--background-color);
     box-shadow: 0 0 5px 0 rgb(159, 176, 159);
+    z-index: 10
 }
 
 

@@ -152,7 +152,6 @@ function displayBtn(skills){
     skillBtns.forEach((btn)=>{
         btn.addEventListener("click", (e)=>{
             const category = e.currentTarget.dataset.id
-            console.log(category)
             const skillsetCategory = skillset.filter((skills) => {
                 if(skills.category === category){
                     return skills

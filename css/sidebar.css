@@ -23,7 +23,7 @@ nav {
 }
 
 .sidebar-links:hover {
-    background-color: rgb(218, 215, 215);
+    background-color: var(--secondary-color);
 }
 
 .sidebar-links img {

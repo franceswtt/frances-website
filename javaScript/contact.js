@@ -1,3 +1,5 @@
+//contact form
+
 const name = document.getElementById("yourName")
 const email = document.getElementById("yourEmail")
 const message = document.getElementById("yourMessage")
@@ -17,3 +19,28 @@ function sendEmail(){
       message => alert("Your message is well received.")
     );
 }
+
+//contact info tabs
+
+const tabs = document.querySelector(".contact-info-tabs")
+const tabBtns = document.querySelectorAll(".tab-btn")
+const contactInfo = document.querySelectorAll(".contact-info")
+
+tabs.addEventListener("click", (e) => {
+  const selectedId = e.target.dataset.id
+
+  if(selectedId) {
+  tabBtns.forEach((btn) => {
+    btn.classList.remove("active")
+  })
+  e.target.classList.add("active")
+
+
+  contactInfo.forEach((info) => {
+    info.classList.remove("active")
+  })
+  const selectedInfo = document.getElementById(selectedId)
+
+  selectedInfo.classList.add("active")
+  }
+})

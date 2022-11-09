@@ -26,7 +26,7 @@ sidebarLinks.forEach((link) => {
       left: 0,
       top: position,
     })
-
+    // close the sidebar on mobile only
     mySidebar.classList.toggle("show-nav")
   })
 

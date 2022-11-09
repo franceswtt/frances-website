@@ -44,3 +44,25 @@ tabs.addEventListener("click", (e) => {
   selectedInfo.classList.add("active")
   }
 })
+
+
+//copy contact info
+
+const copyBtn = document.querySelector(".copy-btn")
+const copyAlert = document.querySelector(".copy-alert")
+copyBtn.addEventListener("click", () => {
+  contactInfo.forEach((i) => {
+    if (i.classList.contains("active")){
+      navigator.clipboard.writeText(i.textContent)
+      copyAlert.classList.toggle("active")
+    }
+  })
+  setTimeout(() => {
+    copyAlert.classList.toggle("active")
+  }, 1500)
+  
+})
+
+
+
+

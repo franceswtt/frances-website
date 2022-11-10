@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <title>Frances Wong's Website</title>
   </head>
 
@@ -76,7 +77,7 @@
         <img src="icons/game-icon.svg" alt="game-icon">
         <div class="nav-links">My Game</div>
       </a>
-      <a href="#contact" class="sidebar-links">
+      <a href="#myContact" class="sidebar-links">
         <img src="icons/chat.svg" alt="contact-icon">
         <div class="nav-links">Contact Me</div>
       </a>
@@ -175,37 +176,38 @@
   </section>
 
 
-<section id="contact" data-aos="fade-up">
-  <div class="contact-form">
-
-    <form onsubmit="sendEmail(); reset(); return false;">
-      <h1>Contact Me</h1>
-      <p class="description">Something you want to tell me?</p>
-
-      <input type="text" id="yourName" placeholder="Your Name" required>
-      <input type="email" id="yourEmail" placeholder="Your Email" required>
-      <textarea name="" id="yourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <button class="submit-btn" type="submit">Send Message</button>
-    </form>
-  </div>
+<section id="myContact" data-aos="fade-up">
+  <h1>Contact Me</h1>
+  <p class="description">Something you want to tell me? I want your feedback!</p>
+  <form action="https://formsubmit.co/franceswtt@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email">
+    <textarea id="your-message" placeholder="Your Message" name="message" rows="10" required></textarea>
+    <button type="submit">Send Message</button>
+    <input type="hidden" name="_subject" value="New submission!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
+  </form> 
 
   <div class="contact-info-tabs">
     <div class="tab-btn-container">
       <button class="tab-btn active" data-id="email-info">My Email</button>
       <button class="tab-btn" data-id="phone-info">My Phone</button>
-    
-    </div>
-    <div class="tab-info-container">
-      <div class="contact-info active" id="email-info"><p>franceswtt@gmail.com</p></div>
-      <div class="contact-info" id="phone-info"><p>9440 7855</p></div>
-      <div class="copy-btn">
-        <img src="icons/copy-icon.svg" alt="copy-icon">
-      </div>
-      <div class="copy-alert">Copied</div>
     </div>
   </div>
+
+  <div class="tab-info-container">
+    <div class="contact-info active" id="email-info"><p>franceswtt@gmail.com</p></div>
+    <div class="contact-info" id="phone-info"><p>9440 7855</p></div>
+    
+    <img class="copy-btn" src="icons/copy-icon.svg" alt="copy-icon">
+    
+    <div class="copy-alert">Copied</div>
+  </div>
+
 </section>
 
+  
 <img class="dark-mode-icon" onclick="darkMode()" src="icons/moon-icon.svg" alt="moon-icon">
 
 </main>
@@ -213,7 +215,6 @@
   <footer>
     <p>Made with &#10084; by Frances Wong <br>
     Thank you for your time!</p>
-
   </footer>
 
   <script src="javaScript/darkMode.js"></script>
@@ -222,7 +223,6 @@
   <script src="javaScript/rockPaperScissors.js"></script>
   <script src="javaScript/jquery-3.6.1.js"></script>
   <script src="javaScript/contact.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

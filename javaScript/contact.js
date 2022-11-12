@@ -37,6 +37,6 @@ copyBtn.addEventListener("click", () => {
   })
   setTimeout(() => {
     copyAlert.classList.toggle("active")
-  }, 1500)
+  }, 800)
   
 })

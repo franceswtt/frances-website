@@ -180,9 +180,23 @@
   <h1>Contact Me</h1>
   <p class="description">Something you want to tell me? I want your feedback!</p>
   <form action="https://formsubmit.co/franceswtt@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email">
-    <textarea id="your-message" placeholder="Your Message" name="message" rows="10" required></textarea>
+    <div class="input-container">
+      <input class="input" type="text" name="name" required>
+      <label>Your Name</label>
+      <span>Your Name</span>
+    </div>
+    <div class="input-container">
+      <input class="input" type="email" name="email" required>
+      <label>Your Email</label>
+      <span>Your Email</span>
+    </div>
+
+    <div class="input-container textarea">
+      <textarea class="input" id="your-message" name="message" rows="10" required></textarea>
+      <label>Your Message</label>
+      <span>Your Message</span>
+    </div>
+    
     <button type="submit">Send Message</button>
     <input type="hidden" name="_subject" value="New submission!">
     <input type="hidden" name="_captcha" value="false">

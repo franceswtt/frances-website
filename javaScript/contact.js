@@ -1,3 +1,22 @@
+//contact form
+const inputs = document.querySelectorAll(".input")
+console.log(inputs)
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", e =>{
+    let parent = e.target.parentNode
+    parent.classList.add("focus")
+  })
+
+  input.addEventListener("blur", e => {
+    let parent = e.target.parentNode
+    if(e.target.value === ""){
+      parent.classList.remove("focus")
+    }
+    
+  })
+})
+
 //contact info tabs
 
 const tabs = document.querySelector(".contact-info-tabs")

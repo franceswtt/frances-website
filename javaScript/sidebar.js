@@ -1,11 +1,16 @@
 // open & close sidebar on mobile only
 
 const mySidebar = document.getElementById("mySidebar")
+const mainDiv = document.querySelector("main")
 
 function openMenu(){
   mySidebar.classList.toggle("show-nav")
+  document.addEventListener("click", (e) => {
+    if(mainDiv.contains(e.target)){
+      mySidebar.classList.remove("show-nav")
+    }
+  })
 }
-
 
 //navigate to the selected container
 
@@ -28,6 +33,8 @@ sidebarLinks.forEach((link) => {
     })
     // close the sidebar on mobile only
     mySidebar.classList.toggle("show-nav")
+
+
   })
 
 })

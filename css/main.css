@@ -8,7 +8,56 @@ main {
 
 #home {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.mini-weather-app{
+    width: 55%;
+    height: 55px;
+    margin-top: 90px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    column-gap: 2%;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(173deg, rgba(138,154,91,1) 5%, rgba(234,248,200,1) 100%, rgba(236,246,233,1) 100%);
+    box-shadow: 3px 3px 20px var(--primary-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 0.9;
+    padding: 0 7%;
+    transition: 0.3s;
+    animation: widen 0.8s;
+
+}
+@keyframes widen {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+.mini-weather-app p{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.mini-weather-app div{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+    white-space: nowrap;
+
+}
+
 
 .my-intro {
     font-size: 16px;
@@ -33,6 +82,7 @@ main {
 }
 
 .heroBtn {
+    width: 15vw;
     margin: 50px;
     display: inline-block;
     text-decoration: none;
@@ -183,7 +233,21 @@ main {
         padding: 30px;
     }
 
-
+    .mini-weather-app{
+        margin-top: 30px;
+        width: 90%;
+    }
+    
+    .weather-icon{
+        display: none;
+    }
+    
+    .weather-info{
+        display: none;
+    }
+    .heroBtn {
+        width: 45vw;
+    }
 
     .about-me {
         flex-direction: column;

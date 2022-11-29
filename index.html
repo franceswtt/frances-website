@@ -27,9 +27,17 @@
       </div>
 
       <div class="mid-section">
-        <div class="seach-box">
-          <img class="search-icon" src="icons/search-icon.svg" alt="search-icon">
-          <input class="text-bar" type="text">
+        <div class="search-box">
+          <div class="search-input">
+            <img class="search-icon" src="icons/search-icon.svg" alt="search-icon">
+            <input class="text-bar" type="text">
+
+            <div class="search-result hide">
+          
+            </div>
+          </div>
+        
+
         </div>
       </div>
 
@@ -83,18 +91,17 @@
       </a>
     </nav>
 
-
     <main>
       <section id="home" class="my-intro" data-aos="fade-up">
-        <div class="mini-weather-app">
-          <div>
-            <p class="my-timezone">Your Location</p>
-            <canvas class="weather-icon" width="50" height="50"></canvas>
-          </div>
-          <div>
-            <p class="my-temperture"></p>
-            <p class="weather-info"></p>
-          </div>
+          <!-- <div class="mini-weather-app">
+            <div>
+              <p class="my-timezone">Your Location</p>
+              <canvas class="weather-icon" width="50" height="50"></canvas>
+            </div>
+            <div>
+              <p class="my-temperture"></p>
+              <p class="weather-info"></p>
+            </div> -->
 
         </div>
 
@@ -243,6 +250,7 @@
   </footer>
 
   <script src="javaScript/darkMode.js"></script>
+  <script src="javaScript/searchBar.js"></script>
   <script src="javaScript/sidebar.js"></script>
   <script src="javaScript/skycons.js"></script>
   <script src="javaScript/weatherApp.js"></script>

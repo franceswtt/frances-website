@@ -17,7 +17,6 @@ header {
 }
 
 .left-section {
-    width: 300px;
     display: flex;
     align-items: center;
 }
@@ -34,7 +33,6 @@ header {
     padding: 10px 10px 10px 10px;
     width: 34px;
     height: 34px;
-    text-align: center;
     font-size: 25px;
     border-radius: 50px;
 }
@@ -43,35 +41,80 @@ header {
     flex: 1;
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     max-width: 700px;
+    position: relative;
 }
 
-.seach-box {
+.search-box {
     flex: 1;
+    position: relative;
     height: 50px;
-    border: none;
+    width: 100%;
     padding-left: 10px;
     border-radius: 50px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgb(255, 255, 255,0.7);
+    border: 1px solid var(--secondary-color);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 0;
+}
+
+.search-box:hover{
+    box-shadow: 0 1px 1px var(--secondary-color);
+}
+.search-input{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-bar {
     width: 100%;
     padding: 10px;
-    background: transparent;
-    border: none;
-    outline: none;
+    font-size: 18px;
 }
 
 .search-icon {
     width: 25px;
-    cursor: pointer;
 }
+
+.search-result{
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    box-shadow: 0 2px 2px var(--secondary-color);
+    background: var(--background-color);
+
+}
+.search-link{
+    display: grid;
+    grid-template-columns: repeat(auto-fill minmax(150px, 1fr));
+    text-align: left;
+    padding: 2% 3%;
+}
+
+.search-link:hover{
+    background: var(--secondary-color);
+}
+
+.search-link img{
+    width: 15px;
+    margin-right: 8px;
+}
+
+.hide{
+    display: none;
+}
+
 
 .right-section{
     width: 250px;
@@ -140,12 +183,8 @@ header {
         cursor: pointer;
     }
     
-    .seach-box {
-       opacity: 0;
-    }
-
-    .text-bar {
-        opacity: 0;
+    .mid-section{
+        display: none;
     }
 
     .right-section{
